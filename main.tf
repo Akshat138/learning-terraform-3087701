@@ -31,7 +31,7 @@ module "blog_vpc" {
   }
 }
 
-module "autoscaling" {
+module "blog_autoscaling" {
   source = "terraform-aws-modules/autoscaling/aws"
   version = "6.10.0"
 
