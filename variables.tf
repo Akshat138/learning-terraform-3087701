@@ -13,7 +13,7 @@ variable "ami_filter" {
 
   default = {
     name = ["bitnami-tomcat-*-x86_64-hvm-ebs-nami"]
-    owners = ["979382823631"] # Bitnami
+    owner = ["979382823631"] # Bitnami
   }
 }
 
@@ -27,7 +27,7 @@ variable "environment" {
 
   default = {
     name = "dev"
-    cidr = "10.0"
+    network_prefix = "10.0"
   }
 }
 
